@@ -1,0 +1,41 @@
+metadata:
+  id: ajeetraina/labspace-sbx
+  sourceRepo: github.com/ajeetraina/labspace-sbx
+  contentVersion: abcd123
+
+title: Running AI Agents Safely with Docker Sandboxes
+description: |
+  Learn how to run AI coding agents in isolated microVM sandboxes using Docker sbx.
+  Go hands-on with structural isolation, credential proxy injection, network policy
+  enforcement, branch mode, and parallel agent execution. Prove the security
+  guarantees yourself with real commands against real file paths.
+
+sections:
+  - title: Pre-flight Checklist
+    contentPath: 00-preflight.md
+  - title: Secrets and credentials
+    contentPath: 01-secrets-and-credentials.md
+  - title: Your first sandbox
+    contentPath: 02-first-sandbox.md
+  - title: The interactive TUI
+    contentPath: 03-the-tui.md
+  - title: Running in direct mode
+    contentPath: 04-running-in-direct-mode.md
+  - title: Parallel agents
+    contentPath: 05-parallel-agents.md
+  - title: Docker inside the sandbox
+    contentPath: 06-docker-inside-the-sandbox.md
+  - title: Port forwarding
+    contentPath: 07-port-forwarding.md
+  - title: Network policies
+    contentPath: 08-network-policies.md
+  - title: Multiple workspaces
+    contentPath: 09-multiple-workspaces.md
+  - title: Debugging sandboxes
+    contentPath: 10-debugging-sandboxes.md
+  - title: Customizing sandboxes
+    contentPath: 11-customizing-sandboxes.md
+    
+
+teardown_script: |
+  sbx rm --force quickstart || true

@@ -1,0 +1,15 @@
+services:
+  configurator:
+    environment:
+      PROJECT_CLONE_URL: https://github.com/mikesir87/labspace-native-sbx
+      TERMINAL_URL: http://host.docker.internal:8085
+
+  workspace:
+    provider:
+      type: labspace
+      options:
+        type: ttyd
+
+  # Don't need this anymore, but also won't work because it tries to share
+  # the network namespace of the workspace container (which isn't a container anymore)
+  host-republisher: !reset null
