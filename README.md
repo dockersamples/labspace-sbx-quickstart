@@ -44,3 +44,13 @@ If you find something wrong or something that needs to be updated, feel free to 
 4. Make the necessary changes and validate they appear as you expect in the Labspace
 
     Be sure to check out the [docs](https://github.com/dockersamples/labspace-infra/tree/main/docs) for additional information and guidelines.
+
+5. When done, make sure to run a `docker compose down` to completely tear everything down:
+
+    ```bash
+    # On Mac/Linux
+    CONTENT_PATH=$PWD docker compose up --watch
+
+    # On Windows with PowerShell
+    $Env:CONTENT_PATH = (Get-Location).Path; docker compose up --watch
+    ```
