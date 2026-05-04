@@ -107,8 +107,4 @@ This lab is going to use some of the features of Git (namely worktrees). In orde
     git commit -m "Initial commit"
     ```
 
-## ✅ Ready to go
-
-All six steps pass? Move to Module 1.
-
-If anything failed, check [Troubleshooting](https://docs.docker.com/ai/sandboxes/troubleshooting/) or the Appendix at the end of this lab.
+You're all ready to go! Go ahead and move on to the next module!
