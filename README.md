@@ -9,6 +9,7 @@ An interactive lab to learn about Docker Sandboxes - the microVM-based agent env
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [sbx](https://docs.docker.com/ai/sandboxes/)
+- [GitHub CLI](https://cli.github.com/)
 
 **Special note:** this lab requires the usage of the Labspace Compose provider, which isn't yet available publicly. Stay tuned though, as it will be coming soon!
 
